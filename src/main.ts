@@ -21,7 +21,7 @@ async function bootstrap() {
 
   // Swagger
   const config = new DocumentBuilder()
-    .setTitle('V-Land Api Stripe')
+    .setTitle('V-Land Api Payments')
     .setVersion('1.0.0')
     .addBearerAuth(
       {
