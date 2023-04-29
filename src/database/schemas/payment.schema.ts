@@ -29,3 +29,5 @@ export class Payment {
 }
 
 export const PaymentSchema = SchemaFactory.createForClass(Payment)
+PaymentSchema.index({ createdAt: -1 });
+PaymentSchema.index({ updatedAt: -1 });

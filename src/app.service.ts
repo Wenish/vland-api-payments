@@ -14,7 +14,11 @@ export class AppService {
     async getPaymentsByUserId(uid: string) {
         const payments = await this.paymentModel.find({
             uid: uid
-        }).exec()
+        })
+        .sort({
+            createdAt: 'desc'
+        })
+        .exec()
         return payments
     }
 }
